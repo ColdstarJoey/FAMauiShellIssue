@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="FAMauiShellIssue.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FAMauiShellIssue"
+    Shell.FlyoutBehavior="Disabled"
+    Title="FAMauiShellIssue">
+
+    <TabBar>
+        <ShellContent Title="Home" Route="Home" ContentTemplate="{DataTemplate local:MainPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FontAwesome" 
+                                 Glyph="home" Color="Gray" Size="20"/>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Settings" Route="Enquiries" ContentTemplate="{DataTemplate local:MainPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FontAwesome" 
+                         Glyph="gear" Color="Gray" Size="20"/>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Graph" Route="History" ContentTemplate="{DataTemplate local:MainPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FontAwesome" 
+                 Glyph="chart-simple" Color="Gray" Size="20"/>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Test" Route="ETS" ContentTemplate="{DataTemplate local:MainPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FontAwesome" 
+                 Glyph="chevron-right" Color="Gray" Size="20"/>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Test 2" Route="Settings" ContentTemplate="{DataTemplate local:MainPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FontAwesome" 
+                 Glyph="chevron-left" Color="Gray" Size="20"/>
+            </ShellContent.Icon>
+        </ShellContent>
+    </TabBar>
+
+</Shell>
